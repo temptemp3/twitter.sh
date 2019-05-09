@@ -1,6 +1,6 @@
 #!/bin/bash
 ## twitter.sh
-## version 0.0.1 - initial
+## version 0.0.2 - remove cache
 ##################################################
 twitter-users-show() { { local screen_name ; screen_name="${1}" ; }
   _() {
@@ -11,11 +11,7 @@ twitter-users-show() { { local screen_name ; screen_name="${1}" ; }
       --header "Authorization: Bearer $( cat access-token )"
     } 
   }
-  {
-    cache \
-    "${cache}/$( sanitize ${FUNCNAME} ${screen_name} )"
-    "_"
-  }
+  _
 }
 twitter-users() {
    commands
