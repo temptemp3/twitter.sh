@@ -26,3 +26,9 @@ before using api
 ```
 access_token=$( twitter oauth2 token )
 ```
+
+show user info
+
+```
+twitter users show ${user}
+```
