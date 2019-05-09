@@ -10,7 +10,7 @@ clone twitter.sh
 git clone https://github.com/temptemp3/twitter.sh.git
 ```
 
-source into script
+source into shell (or script)
 
 ```
 . ./twitter.sh/twitter.sh
