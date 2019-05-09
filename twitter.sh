@@ -1,17 +1,14 @@
 #!/bin/bash
 ## twitter.sh
-## version 0.0.2 - remove cache
+## version 0.0.3 - fix user/show access token
 ##################################################
 twitter-users-show() { { local screen_name ; screen_name="${1}" ; }
-  _() {
-    { # get user
-      curl \
-      --silent \
-      --url "https://api.twitter.com/1.1/users/show.json?screen_name=${screen_name}" \
-      --header "Authorization: Bearer $( cat access-token )"
-    } 
-  }
-  _
+  { # get user
+    curl \
+    --silent \
+    --url "https://api.twitter.com/1.1/users/show.json?screen_name=${screen_name}" \
+    --header "Authorization: Bearer ${access_token}"
+  } 
 }
 twitter-users() {
    commands
