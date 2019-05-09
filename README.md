@@ -20,3 +20,9 @@ consumer_key="YOURCK"
 consumer_secret="YOURCS"
 bearer_token="$( echo -n "${consumer_key}:${consumer_secret}" | base64 -w 0 )"
 ```
+
+before using api
+
+```
+access_token=$( twitter oauth2 token )
+```
