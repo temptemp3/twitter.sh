@@ -1,6 +1,6 @@
 # twitter.sh
 
-cli for twitter api using application-only auth
+cli for twitter api using consumer key/secret based application-only auth
 
 ## usage
 
