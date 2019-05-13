@@ -14,7 +14,8 @@ git clone https://github.com/temptemp3/sh2.git -b 190504
 source into shell or script
 
 ```
-. ./twitter.sh/twitter.sh
+. twitter.sh/twitter.sh
+. sh2/aliases/commands.sh
 ```
 
 before calling `twitter` command
