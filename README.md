@@ -7,8 +7,8 @@ cli for twitter api using consumer key/secret based application-only auth
 clone script
 
 ```
-git clone https://github.com/temptemp3/twitter.sh.git
 git clone https://github.com/temptemp3/sh2.git -b 190504
+git clone https://github.com/temptemp3/twitter.sh.git
 ```
 
 source into shell or script
